@@ -8,7 +8,7 @@ can be found in the LICENSE file at http://angular.io/license
 
 <div *ngFor="let product of products">
   <h3>
-    <a [title]="product.name + ' details'">
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
       {{ product.name }}
     </a>
   </h3>
